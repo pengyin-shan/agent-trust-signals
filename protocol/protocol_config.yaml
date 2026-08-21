@@ -45,7 +45,7 @@ corpus_source:
   retrieved: "2026-08-19"
 
 draw:
-  seed: null
+  seed: 202608211535
   panel_size: 6
   stratum_filter: "sc26"
   strata: ["hpc", "qc"]
