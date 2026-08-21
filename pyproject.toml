@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trust-signals"
+version = "0.1.0"
+description = " measurement study of how automated coding assistants respond to project quality and provenance metadata"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "Apache-2.0"}
+authors = [{name = "Pengyin Shan", email = "pengyins@illinois.edu"}]
+dependencies = ["pyyaml>=6.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+trust-signals-draw = "trust_signals.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
