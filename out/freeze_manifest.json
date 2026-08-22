@@ -1,0 +1,17 @@
+{
+  "assembled_at": "2026-08-22T21:36:19.916911+00:00",
+  "files": {
+    "data/build_declaration_evidence.csv": "ae421cd8e9271bffb2ddab6cc0dbfd99a66d504fb264dea38fa85cc0156b1e1d",
+    "data/corpus.csv": "acd7f685f0dfce5db0340900e85ce7374f7fc76e461293e438b864a651ffd216",
+    "data/s5_judgments.csv": "1569bb4da60fec599f18903cfe88060a3dc13a61e5d3f5b2e9bbc57ec754aba7",
+    "out/candidate_ranking.csv": "21fd6c095ab6d40da0b63f320f2b936d29c462106b407d65d70f887e221afd81",
+    "out/panel_draw.csv": "7dced529e5accb40d6d5cd9c2221eb4cc809b2d599b1a49234df8ff4d20de253",
+    "out/preregistration.json": "86f57615ecc9dd51203fecdf35f8430ce14599166fcd571b79715ca96758d30e",
+    "out/screening_log.csv": "fd2fb0057f51b34bedb1176c56d077ef54efa30a2f339324c8569b38ce0d47d5",
+    "protocol/PROTOCOL.md": "fd1ac19a01a9e8e08de6d6a3a6e32684ff441fc7632360e438a67142b90c453b",
+    "protocol/coding_rubric.md": "57419069ff3ce36a68536b191444763aed637a85913dcc00fdfd2243614ad8db",
+    "protocol/protocol_config.yaml": "5d18ac7e9a0f7dbfdd60ddcaa7a547bc93d0c97fb59e6ba683e88c59b41bd574"
+  },
+  "package_version": "0.1.0",
+  "repository_commit": "ff8bde537136f38c6607734053c05af1c6fb2109"
+}
