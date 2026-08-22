@@ -10,4 +10,5 @@ authors:
     orcid: "https://orcid.org/0009-0009-6309-380X"
 version: 0.1.0
 license: Apache-2.0
+doi: "10.5281/zenodo.22062503"
 repository-code: "https://github.com/pengyin-shan/agent-trust-signals"
