@@ -1,0 +1,232 @@
+project_id,stratum,stage,rank,rule_id,passed,pending,reason
+adaptivecpp,hpc,frame,,S1,True,False,resolvable repository entry: adaptivecpp/adaptivecpp
+adaptivecpp,hpc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch master (probed 2026-08-19T18:00:31Z); not installable from local checkout
+amgcl,hpc,frame,,S1,True,False,resolvable repository entry: ddemidov/amgcl
+amgcl,hpc,frame,,S2,True,False,installable from local checkout: setup.py on branch master (probed 2026-08-19T18:00:31Z)
+amgcl,hpc,frame,,S4,True,False,not a named example from the supply-side preprint
+amrex,hpc,frame,,S1,True,False,resolvable repository entry: amrex-codes/amrex
+amrex,hpc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch master (probed 2026-08-19T18:00:31Z); not installable from local checkout
+arraymancer,hpc,frame,,S1,True,False,resolvable repository entry: mratsim/arraymancer
+arraymancer,hpc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch master (probed 2026-08-19T18:00:31Z); not installable from local checkout
+blis,hpc,frame,,S1,True,False,resolvable repository entry: flame/blis
+blis,hpc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch master (probed 2026-08-19T18:00:31Z); not installable from local checkout
+chapel,hpc,frame,,S1,True,False,resolvable repository entry: chapel-lang/chapel
+chapel,hpc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch main (probed 2026-08-19T18:00:31Z); not installable from local checkout
+cuda-oxide,hpc,frame,,S1,True,False,resolvable repository entry: nvlabs/cuda-oxide
+cuda-oxide,hpc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch main (probed 2026-08-19T18:00:31Z); not installable from local checkout
+dace,hpc,frame,,S1,True,False,resolvable repository entry: spcl/dace
+dace,hpc,frame,,S2,True,False,installable from local checkout: setup.py on branch main (probed 2026-08-19T18:00:31Z)
+dace,hpc,frame,,S4,False,False,"excluded named example: named divergent paper-vs-software example, arXiv:2608.17159 sec. 4.4"
+dealii,hpc,frame,,S1,True,False,resolvable repository entry: dealii/dealii
+dealii,hpc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch master (probed 2026-08-19T18:00:31Z); not installable from local checkout
+drake,hpc,frame,,S1,True,False,resolvable repository entry: ropensci/drake
+drake,hpc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch main (probed 2026-08-19T18:00:31Z); not installable from local checkout
+elmerfem,hpc,frame,,S1,True,False,resolvable repository entry: elmercsc/elmerfem
+elmerfem,hpc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch master (probed 2026-08-19T18:00:31Z); not installable from local checkout
+envpool,hpc,frame,,S1,True,False,resolvable repository entry: sail-sg/envpool
+envpool,hpc,frame,,S2,True,False,installable from local checkout: setup.py on branch main (probed 2026-08-19T18:00:31Z)
+envpool,hpc,frame,,S4,True,False,not a named example from the supply-side preprint
+faasm,hpc,frame,,S1,True,False,resolvable repository entry: faasm/faasm
+faasm,hpc,frame,,S2,True,False,installable from local checkout: pyproject.toml on branch main (probed 2026-08-19T18:00:31Z)
+faasm,hpc,frame,,S4,True,False,not a named example from the supply-side preprint
+fluidx3d,hpc,frame,,S1,True,False,resolvable repository entry: projectphysx/fluidx3d
+fluidx3d,hpc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch master (probed 2026-08-19T18:00:31Z); not installable from local checkout
+geant4,hpc,frame,,S1,True,False,resolvable repository entry: geant4/geant4
+geant4,hpc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch master (probed 2026-08-19T18:00:31Z); not installable from local checkout
+gpumd,hpc,frame,,S1,True,False,resolvable repository entry: brucefan1983/gpumd
+gpumd,hpc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch master (probed 2026-08-19T18:00:31Z); not installable from local checkout
+hdf5,hpc,frame,,S1,True,False,resolvable repository entry: hdfgroup/hdf5
+hdf5,hpc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch master (probed 2026-08-19T18:00:31Z); not installable from local checkout
+hermit-rs,hpc,frame,,S1,True,False,resolvable repository entry: hermit-os/hermit-rs
+hermit-rs,hpc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch main (probed 2026-08-19T18:00:31Z); not installable from local checkout
+horovod,hpc,frame,,S1,True,False,resolvable repository entry: horovod/horovod
+horovod,hpc,frame,,S2,True,False,installable from local checkout: setup.py on branch master (probed 2026-08-19T18:00:31Z)
+horovod,hpc,frame,,S4,True,False,not a named example from the supply-side preprint
+hypre,hpc,frame,,S1,True,False,resolvable repository entry: hypre-space/hypre
+hypre,hpc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch master (probed 2026-08-19T18:00:31Z); not installable from local checkout
+kernel,hpc,frame,,S1,True,False,resolvable repository entry: hermit-os/kernel
+kernel,hpc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch main (probed 2026-08-19T18:00:31Z); not installable from local checkout
+kokkos,hpc,frame,,S1,True,False,resolvable repository entry: kokkos/kokkos
+kokkos,hpc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch master (probed 2026-08-19T18:00:31Z); not installable from local checkout
+kratos,hpc,frame,,S1,True,False,resolvable repository entry: kratosmultiphysics/kratos
+kratos,hpc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch master (probed 2026-08-19T18:00:31Z); not installable from local checkout
+mfem,hpc,frame,,S1,True,False,resolvable repository entry: mfem/mfem
+mfem,hpc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch main (probed 2026-08-19T18:00:31Z); not installable from local checkout
+mpi4py,hpc,frame,,S1,True,False,resolvable repository entry: mpi4py/mpi4py
+mpi4py,hpc,frame,,S2,True,False,"installable from local checkout: pyproject.toml, setup.py on branch master (probed 2026-08-19T18:00:31Z)"
+mpi4py,hpc,frame,,S4,True,False,not a named example from the supply-side preprint
+mpich,hpc,frame,,S1,True,False,resolvable repository entry: pmodels/mpich
+mpich,hpc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch main (probed 2026-08-19T18:00:31Z); not installable from local checkout
+neanderthal,hpc,frame,,S1,True,False,resolvable repository entry: uncomplicate/neanderthal
+neanderthal,hpc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch master (probed 2026-08-19T18:00:31Z); not installable from local checkout
+nnpack,hpc,frame,,S1,True,False,resolvable repository entry: maratyszcza/nnpack
+nnpack,hpc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch master (probed 2026-08-19T18:00:31Z); not installable from local checkout
+ohpc,hpc,frame,,S1,True,False,resolvable repository entry: openhpc/ohpc
+ohpc,hpc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch master (probed 2026-08-19T18:00:31Z); not installable from local checkout
+ompi,hpc,frame,,S1,True,False,resolvable repository entry: open-mpi/ompi
+ompi,hpc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch main (probed 2026-08-19T18:00:31Z); not installable from local checkout
+openmc,hpc,frame,,S1,True,False,resolvable repository entry: openmc-dev/openmc
+openmc,hpc,frame,,S2,True,False,installable from local checkout: pyproject.toml on branch master (probed 2026-08-19T18:00:31Z)
+openmc,hpc,frame,,S4,True,False,not a named example from the supply-side preprint
+precice,hpc,frame,,S1,True,False,resolvable repository entry: precice/precice
+precice,hpc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch main (probed 2026-08-19T18:00:31Z); not installable from local checkout
+prometeo,hpc,frame,,S1,True,False,resolvable repository entry: zanellia/prometeo
+prometeo,hpc,frame,,S2,True,False,installable from local checkout: setup.py on branch master (probed 2026-08-19T18:00:31Z)
+prometeo,hpc,frame,,S4,True,False,not a named example from the supply-side preprint
+rose,hpc,frame,,S1,True,False,resolvable repository entry: llnl/rose
+rose,hpc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch master (probed 2026-08-19T18:00:31Z); not installable from local checkout
+rsmpi,hpc,frame,,S1,True,False,resolvable repository entry: rsmpi/rsmpi
+rsmpi,hpc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch main (probed 2026-08-19T18:00:31Z); not installable from local checkout
+spack,hpc,frame,,S1,True,False,resolvable repository entry: spack/spack
+spack,hpc,frame,,S2,True,False,installable from local checkout: pyproject.toml on branch master (probed 2026-08-19T18:00:31Z)
+spack,hpc,frame,,S4,True,False,not a named example from the supply-side preprint
+sse2neon,hpc,frame,,S1,True,False,resolvable repository entry: dltcollab/sse2neon
+sse2neon,hpc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch master (probed 2026-08-19T18:00:31Z); not installable from local checkout
+sundials,hpc,frame,,S1,True,False,resolvable repository entry: llnl/sundials
+sundials,hpc,frame,,S2,True,False,installable from local checkout: pyproject.toml on branch main (probed 2026-08-19T18:00:31Z)
+sundials,hpc,frame,,S4,True,False,not a named example from the supply-side preprint
+targets,hpc,frame,,S1,True,False,resolvable repository entry: ropensci/targets
+targets,hpc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch main (probed 2026-08-19T18:00:31Z); not installable from local checkout
+taskflow,hpc,frame,,S1,True,False,resolvable repository entry: taskflow/taskflow
+taskflow,hpc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch master (probed 2026-08-19T18:00:31Z); not installable from local checkout
+thread-pool,hpc,frame,,S1,True,False,resolvable repository entry: bshoshany/thread-pool
+thread-pool,hpc,frame,,S2,True,False,installable from local checkout: pyproject.toml on branch master (probed 2026-08-19T18:00:31Z)
+thread-pool,hpc,frame,,S4,False,False,"excluded named example: named consistent-but-paper-anchored example, sec. 4.4"
+trilinos,hpc,frame,,S1,True,False,resolvable repository entry: trilinos/trilinos
+trilinos,hpc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch master (probed 2026-08-19T18:00:31Z); not installable from local checkout
+ucx,hpc,frame,,S1,True,False,resolvable repository entry: openucx/ucx
+ucx,hpc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch master (probed 2026-08-19T18:00:31Z); not installable from local checkout
+zfp,hpc,frame,,S1,True,False,resolvable repository entry: llnl/zfp
+zfp,hpc,frame,,S2,True,False,installable from local checkout: setup.py on branch master (probed 2026-08-19T18:00:31Z)
+zfp,hpc,frame,,S4,True,False,not a named example from the supply-side preprint
+faasm,hpc,walk,1,S3,True,False,no ecosystem-position collision with accepted members
+faasm,hpc,walk,1,S5,True,False,manual confirmation recorded 2026-08-22T20:04:11Z: pip engaged build declaration from checkout
+mpi4py,hpc,walk,2,S3,True,False,no ecosystem-position collision with accepted members
+mpi4py,hpc,walk,2,S5,True,False,manual confirmation recorded 2026-08-22T20:05:36Z: pip engaged setup.py build; compile failed on missing MPI toolchain (environment)
+envpool,hpc,walk,3,S3,True,False,no ecosystem-position collision with accepted members
+envpool,hpc,walk,3,S5,True,False,manual confirmation recorded 2026-08-22T20:09:19Z: pip engaged build metadata and resolved dependencies; envpool-assets wheel unavailable for platform (environment)
+amazon-braket-sdk-python,qc,frame,,S1,True,False,resolvable repository entry: amazon-braket/amazon-braket-sdk-python
+amazon-braket-sdk-python,qc,frame,,S2,True,False,installable from local checkout: pyproject.toml on branch main (probed 2026-08-19T18:00:31Z)
+amazon-braket-sdk-python,qc,frame,,S4,True,False,not a named example from the supply-side preprint
+blueqatsdk,qc,frame,,S1,True,False,resolvable repository entry: blueqat/blueqatsdk
+blueqatsdk,qc,frame,,S2,True,False,installable from local checkout: pyproject.toml on branch main (probed 2026-08-19T18:00:31Z)
+blueqatsdk,qc,frame,,S4,True,False,not a named example from the supply-side preprint
+catalyst,qc,frame,,S1,True,False,resolvable repository entry: pennylaneai/catalyst
+catalyst,qc,frame,,S2,True,False,"installable from local checkout: pyproject.toml, setup.py on branch main (probed 2026-08-19T18:00:31Z)"
+catalyst,qc,frame,,S4,True,False,not a named example from the supply-side preprint
+cirq,qc,frame,,S1,True,False,resolvable repository entry: quantumlib/cirq
+cirq,qc,frame,,S2,True,False,"installable from local checkout: pyproject.toml, setup.py on branch main (probed 2026-08-19T18:00:31Z)"
+cirq,qc,frame,,S4,False,False,"excluded named example: named identity-ambiguity example, sec. 4.4"
+covalent,qc,frame,,S1,True,False,resolvable repository entry: agnostiqhq/covalent
+covalent,qc,frame,,S2,True,False,"installable from local checkout: pyproject.toml, setup.py on branch master (probed 2026-08-19T18:00:31Z)"
+covalent,qc,frame,,S4,True,False,not a named example from the supply-side preprint
+cuda-quantum,qc,frame,,S1,True,False,resolvable repository entry: nvidia/cuda-quantum
+cuda-quantum,qc,frame,,S2,True,False,installable from local checkout: pyproject.toml on branch main (probed 2026-08-19T18:00:31Z)
+cuda-quantum,qc,frame,,S4,False,False,"excluded named example: named archive-staleness example, sec. 4.4"
+dwave-ocean-sdk,qc,frame,,S1,True,False,resolvable repository entry: dwavesystems/dwave-ocean-sdk
+dwave-ocean-sdk,qc,frame,,S2,True,False,"installable from local checkout: pyproject.toml, setup.py on branch master (probed 2026-08-19T18:00:31Z)"
+dwave-ocean-sdk,qc,frame,,S4,True,False,not a named example from the supply-side preprint
+grassmann-jl,qc,frame,,S1,True,False,resolvable repository entry: chakravala/grassmann.jl
+grassmann-jl,qc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch master (probed 2026-08-19T18:00:31Z); not installable from local checkout
+grove,qc,frame,,S1,True,False,resolvable repository entry: rigetti/grove
+grove,qc,frame,,S2,True,False,installable from local checkout: setup.py on branch master (probed 2026-08-19T18:00:31Z)
+grove,qc,frame,,S4,True,False,not a named example from the supply-side preprint
+openfermion,qc,frame,,S1,True,False,resolvable repository entry: quantumlib/openfermion
+openfermion,qc,frame,,S2,True,False,"installable from local checkout: pyproject.toml, setup.py on branch main (probed 2026-08-19T18:00:31Z)"
+openfermion,qc,frame,,S4,True,False,not a named example from the supply-side preprint
+openqasm,qc,frame,,S1,True,False,resolvable repository entry: openqasm/openqasm
+openqasm,qc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch main (probed 2026-08-19T18:00:31Z); not installable from local checkout
+pennylane,qc,frame,,S1,True,False,resolvable repository entry: pennylaneai/pennylane
+pennylane,qc,frame,,S2,True,False,"installable from local checkout: pyproject.toml, setup.py on branch main (probed 2026-08-19T18:00:31Z)"
+pennylane,qc,frame,,S4,True,False,not a named example from the supply-side preprint
+pennylane-qiskit,qc,frame,,S1,True,False,resolvable repository entry: pennylaneai/pennylane-qiskit
+pennylane-qiskit,qc,frame,,S2,True,False,"installable from local checkout: pyproject.toml, setup.py on branch master (probed 2026-08-19T18:00:31Z)"
+pennylane-qiskit,qc,frame,,S4,True,False,not a named example from the supply-side preprint
+projectq,qc,frame,,S1,True,False,resolvable repository entry: projectq-framework/projectq
+projectq,qc,frame,,S2,True,False,"installable from local checkout: pyproject.toml, setup.py on branch master (probed 2026-08-19T18:00:31Z)"
+projectq,qc,frame,,S4,True,False,not a named example from the supply-side preprint
+pyquil,qc,frame,,S1,True,False,resolvable repository entry: rigetti/pyquil
+pyquil,qc,frame,,S2,True,False,installable from local checkout: pyproject.toml on branch master (probed 2026-08-19T18:00:31Z)
+pyquil,qc,frame,,S4,True,False,not a named example from the supply-side preprint
+pyzx,qc,frame,,S1,True,False,resolvable repository entry: zxcalc/pyzx
+pyzx,qc,frame,,S2,True,False,installable from local checkout: pyproject.toml on branch master (probed 2026-08-19T18:00:31Z)
+pyzx,qc,frame,,S4,True,False,not a named example from the supply-side preprint
+qdk,qc,frame,,S1,True,False,resolvable repository entry: microsoft/qdk
+qdk,qc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch main (probed 2026-08-19T18:00:31Z); not installable from local checkout
+qibo,qc,frame,,S1,True,False,resolvable repository entry: qiboteam/qibo
+qibo,qc,frame,,S2,True,False,installable from local checkout: pyproject.toml on branch master (probed 2026-08-19T18:00:31Z)
+qibo,qc,frame,,S4,True,False,not a named example from the supply-side preprint
+qiskit,qc,frame,,S1,True,False,resolvable repository entry: qiskit/qiskit
+qiskit,qc,frame,,S2,True,False,"installable from local checkout: pyproject.toml, setup.py on branch main (probed 2026-08-19T18:00:31Z)"
+qiskit,qc,frame,,S4,True,False,not a named example from the supply-side preprint
+qiskit-aer,qc,frame,,S1,True,False,resolvable repository entry: qiskit/qiskit-aer
+qiskit-aer,qc,frame,,S2,True,False,"installable from local checkout: pyproject.toml, setup.py on branch main (probed 2026-08-19T18:00:31Z)"
+qiskit-aer,qc,frame,,S4,True,False,not a named example from the supply-side preprint
+qiskit-ibm-runtime,qc,frame,,S1,True,False,resolvable repository entry: qiskit/qiskit-ibm-runtime
+qiskit-ibm-runtime,qc,frame,,S2,True,False,installable from local checkout: pyproject.toml on branch main (probed 2026-08-19T18:00:31Z)
+qiskit-ibm-runtime,qc,frame,,S4,True,False,not a named example from the supply-side preprint
+qiskit-machine-learning,qc,frame,,S1,True,False,resolvable repository entry: qiskit-community/qiskit-machine-learning
+qiskit-machine-learning,qc,frame,,S2,True,False,"installable from local checkout: pyproject.toml, setup.py on branch main (probed 2026-08-19T18:00:31Z)"
+qiskit-machine-learning,qc,frame,,S4,True,False,not a named example from the supply-side preprint
+qmasm,qc,frame,,S1,True,False,resolvable repository entry: lanl/qmasm
+qmasm,qc,frame,,S2,True,False,installable from local checkout: setup.py on branch master (probed 2026-08-19T18:00:31Z)
+qmasm,qc,frame,,S4,True,False,not a named example from the supply-side preprint
+qpanda-2,qc,frame,,S1,True,False,resolvable repository entry: originq/qpanda-2
+qpanda-2,qc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch master (probed 2026-08-19T18:00:31Z); not installable from local checkout
+qpp,qc,frame,,S1,True,False,resolvable repository entry: softwareqinc/qpp
+qpp,qc,frame,,S2,True,False,installable from local checkout: pyproject.toml on branch main (probed 2026-08-19T18:00:31Z)
+qpp,qc,frame,,S4,True,False,not a named example from the supply-side preprint
+qrisp,qc,frame,,S1,True,False,resolvable repository entry: eclipse-qrisp/qrisp
+qrisp,qc,frame,,S2,True,False,"installable from local checkout: pyproject.toml, setup.py on branch main (probed 2026-08-19T18:00:31Z)"
+qrisp,qc,frame,,S4,True,False,not a named example from the supply-side preprint
+qsim,qc,frame,,S1,True,False,resolvable repository entry: quantumlib/qsim
+qsim,qc,frame,,S2,True,False,"installable from local checkout: pyproject.toml, setup.py on branch main (probed 2026-08-19T18:00:31Z)"
+qsim,qc,frame,,S4,True,False,not a named example from the supply-side preprint
+qualtran,qc,frame,,S1,True,False,resolvable repository entry: quantumlib/qualtran
+qualtran,qc,frame,,S2,True,False,installable from local checkout: pyproject.toml on branch main (probed 2026-08-19T18:00:31Z)
+qualtran,qc,frame,,S4,True,False,not a named example from the supply-side preprint
+quantum,qc,frame,,S1,True,False,resolvable repository entry: tensorflow/quantum
+quantum,qc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch master (probed 2026-08-19T18:00:31Z); not installable from local checkout
+quantumtoolbox-jl,qc,frame,,S1,True,False,resolvable repository entry: qutip/quantumtoolbox.jl
+quantumtoolbox-jl,qc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch main (probed 2026-08-19T18:00:31Z); not installable from local checkout
+quimb,qc,frame,,S1,True,False,resolvable repository entry: jcmgray/quimb
+quimb,qc,frame,,S2,True,False,installable from local checkout: pyproject.toml on branch main (probed 2026-08-19T18:00:31Z)
+quimb,qc,frame,,S4,True,False,not a named example from the supply-side preprint
+quirk,qc,frame,,S1,True,False,resolvable repository entry: strilanc/quirk
+quirk,qc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch master (probed 2026-08-19T18:00:31Z); not installable from local checkout
+qulacs,qc,frame,,S1,True,False,resolvable repository entry: qulacs/qulacs
+qulacs,qc,frame,,S2,True,False,"installable from local checkout: pyproject.toml, setup.py on branch main (probed 2026-08-19T18:00:31Z)"
+qulacs,qc,frame,,S4,True,False,not a named example from the supply-side preprint
+qutip,qc,frame,,S1,True,False,resolvable repository entry: qutip/qutip
+qutip,qc,frame,,S2,True,False,"installable from local checkout: pyproject.toml, setup.py on branch master (probed 2026-08-19T18:00:31Z)"
+qutip,qc,frame,,S4,True,False,not a named example from the supply-side preprint
+qutip-qip,qc,frame,,S1,True,False,resolvable repository entry: qutip/qutip-qip
+qutip-qip,qc,frame,,S2,True,False,installable from local checkout: pyproject.toml on branch master (probed 2026-08-19T18:00:31Z)
+qutip-qip,qc,frame,,S4,True,False,not a named example from the supply-side preprint
+recirq,qc,frame,,S1,True,False,resolvable repository entry: quantumlib/recirq
+recirq,qc,frame,,S2,True,False,installable from local checkout: setup.py on branch main (probed 2026-08-19T18:00:31Z)
+recirq,qc,frame,,S4,True,False,not a named example from the supply-side preprint
+rustworkx,qc,frame,,S1,True,False,resolvable repository entry: qiskit/rustworkx
+rustworkx,qc,frame,,S2,True,False,"installable from local checkout: pyproject.toml, setup.py on branch main (probed 2026-08-19T18:00:31Z)"
+rustworkx,qc,frame,,S4,True,False,not a named example from the supply-side preprint
+scaffcc,qc,frame,,S1,True,False,resolvable repository entry: epiqc/scaffcc
+scaffcc,qc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch master (probed 2026-08-19T18:00:31Z); not installable from local checkout
+silq,qc,frame,,S1,True,False,resolvable repository entry: silq-lang/silq
+silq,qc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch master (probed 2026-08-19T18:00:31Z); not installable from local checkout
+stim,qc,frame,,S1,True,False,resolvable repository entry: quantumlib/stim
+stim,qc,frame,,S2,True,False,"installable from local checkout: pyproject.toml, setup.py on branch main (probed 2026-08-19T18:00:31Z)"
+stim,qc,frame,,S4,True,False,not a named example from the supply-side preprint
+toqito,qc,frame,,S1,True,False,resolvable repository entry: vprusso/toqito
+toqito,qc,frame,,S2,True,False,installable from local checkout: pyproject.toml on branch master (probed 2026-08-19T18:00:31Z)
+toqito,qc,frame,,S4,True,False,not a named example from the supply-side preprint
+torchquantum,qc,frame,,S1,True,False,resolvable repository entry: mit-han-lab/torchquantum
+torchquantum,qc,frame,,S2,True,False,installable from local checkout: setup.py on branch main (probed 2026-08-19T18:00:31Z)
+torchquantum,qc,frame,,S4,True,False,not a named example from the supply-side preprint
+yao-jl,qc,frame,,S1,True,False,resolvable repository entry: quantumbfs/yao.jl
+yao-jl,qc,frame,,S2,False,False,no pyproject.toml or setup.py at repository root on branch master (probed 2026-08-19T18:00:31Z); not installable from local checkout
+qutip,qc,walk,1,S3,True,False,no ecosystem-position collision with accepted members
+qutip,qc,walk,1,S5,True,False,manual confirmation recorded 2026-08-22T20:24:54Z: pip engaged build declaration from checkout
+covalent,qc,walk,2,S3,True,False,no ecosystem-position collision with accepted members
+covalent,qc,walk,2,S5,True,False,manual confirmation recorded 2026-08-22T20:26:15Z: pip engaged build declaration from checkout
+qrisp,qc,walk,3,S3,True,False,no ecosystem-position collision with accepted members
+qrisp,qc,walk,3,S5,True,False,manual confirmation recorded 2026-08-22T20:27:13Z: pip engaged build declaration; build-dependency installation failed in local environment

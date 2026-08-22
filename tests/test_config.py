@@ -58,6 +58,8 @@ def test_corpus_hash_mismatch_raises(tmp_path):
 
 def test_freeze_pending_detector_finds_placeholders():
     cfg = copy.deepcopy(good_cfg())
+    cfg["frozen_at"] = "FREEZE-PENDING"
+    cfg["draw"]["seed"] = None
     found = config.freeze_pending_strings(cfg)
     assert "frozen_at" in found
     assert "draw.seed" in found

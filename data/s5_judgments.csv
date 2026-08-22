@@ -1,1 +1,21 @@
 project_id,decision,note,recorded_at
+faasm,pass,pip engaged build declaration from checkout,2026-08-22T20:04:11Z
+mpi4py,pass,pip engaged setup.py build; compile failed on missing MPI toolchain (environment),2026-08-22T20:05:36Z
+envpool,pass,pip engaged build metadata and resolved dependencies; envpool-assets wheel unavailable for platform (environment),2026-08-22T20:09:19Z
+zfp,pass,pip engaged build declaration; build-dependency installation failed in local environment,2026-08-22T20:10:32Z
+openmc,pass,pip engaged build declaration from checkout,2026-08-22T20:12:32Z
+sundials,pass,pip engaged build declaration; build-dependency installation failed in local environment,2026-08-22T20:15:21Z
+amgcl,pass,pip engaged build declaration; build-dependency installation failed in local environment,2026-08-22T20:19:44Z
+prometeo,pass,pip engaged build declaration; build-dependency installation failed in local environment,2026-08-22T20:20:28Z
+spack,pass,pip engaged build declaration; build-dependency installation failed in local environment,2026-08-22T20:21:19Z
+horovod,pass,pip engaged pyproject build; build-dependency installation failed in local environment; repository archived by owner 2026-07-29,2026-08-22T20:23:44Z
+qutip,pass,pip engaged build declaration from checkout,2026-08-22T20:24:54Z
+covalent,pass,pip engaged build declaration from checkout,2026-08-22T20:26:15Z
+qrisp,pass,pip engaged build declaration; build-dependency installation failed in local environment,2026-08-22T20:27:13Z
+qiskit-ibm-runtime,pass,pip engaged build declaration from checkout,2026-08-22T20:28:06Z
+qibo,pass,pip engaged build declaration; build-dependency installation failed in local environment,2026-08-22T20:28:50Z
+amazon-braket-sdk-python,pass,pip engaged build declaration from checkout,2026-08-22T20:30:15Z
+projectq,pass,pip engaged build declaration; build-dependency installation failed in local environment,2026-08-22T20:31:20Z
+dwave-ocean-sdk,pass,pip engaged build declaration from checkout,2026-08-22T20:33:55Z
+qsim,pass,pip engaged build declaration; build-dependency installation failed in local environment,2026-08-22T20:35:39Z
+qiskit,pass,pip engaged build declaration; build-dependency installation (Rust toolchain) failed in local environment,2026-08-22T20:38:09Z

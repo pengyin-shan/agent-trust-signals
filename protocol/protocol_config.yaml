@@ -20,21 +20,69 @@ frontier_supplement:
   trials_per_cell: 3
   models:
     - {id: frontier_anthropic, runtime: anthropic_api, model_string: "claude-fable-5"}
-    - {id: frontier_openai,    runtime: openai_api,    model_string: "gpt-5.6"}
-    - {id: frontier_openweight, runtime: openai_compatible, provider: "FREEZE-PENDING", model_string: "FREEZE-PENDING", note: "leading open-weight frontier model (Kimi K2.5 class) accessed through a US-hosted inference provider; provider, endpoint, and exact string verified and recorded at freeze"}
+    - {id: frontier_openai,    runtime: openai_api,    model_string: "gpt-5.6-sol"}
+    - {id: frontier_openweight, runtime: openai_compatible, provider: "DeepInfra", model_string: "moonshotai/Kimi-K2.6", note: "leading open-weight frontier model (Kimi K2.5 class) accessed through a US-hosted inference provider; provider, endpoint, and exact string verified and recorded at freeze"}
 
 cost_recording:
   per_trial_fields: [model_id, provider, condition_id, harness_id, project_id, trial_index, started_at, ended_at, wall_clock_seconds, api_calls, input_tokens_uncached, input_tokens_cache_write, input_tokens_cache_read, output_tokens, usd_cost_computed]
   rate_card:
-    recorded_at: "FREEZE-PENDING"
-    entries: "FREEZE-PENDING"
+      recorded_at: "2026-08-22"
+      entries:
+      - model_id: hosted_sonnet
+        model_string: "claude-sonnet-5"
+        provider: Anthropic
+        source_url: "https://platform.claude.com/docs/en/about-claude/pricing"
+        usd_per_mtok: {input: 2.00, cache_read: 0.20, output: 10.00}
+        provider_specific: {cache_write_5m: 2.50, cache_write_1h: 4.00}
+        note: >
+          Introductory price confirmed as standard on the pricing page; the previously scheduled September 2026 increase will not occur.
+      - model_id: hosted_flashlite
+        model_string: "gemini-3.5-flash-lite"
+        provider: Google
+        source_url: "https://ai.google.dev/gemini-api/docs/pricing"
+        usd_per_mtok: {input: 0.30, cache_read: 0.03, output: 2.50}
+        provider_specific: {cache_storage_per_mtok_hour: 1.00}
+        note: >
+          Standard paid tier; output price includes thinking tokens. Explicit context-cache storage is metered separately and unused unless the runner enables caching. Paid-tier content is not used for product improvement per the same page.
+      - model_id: frontier_anthropic
+        model_string: "claude-fable-5"
+        provider: Anthropic
+        source_url: "https://platform.claude.com/docs/en/about-claude/pricing"
+        usd_per_mtok: {input: 10.00, cache_read: 1.00, output: 50.00}
+        provider_specific: {cache_write_5m: 12.50, cache_write_1h: 20.00}
+        note: ""
+      - model_id: frontier_openai
+        model_string: "gpt-5.6-sol"
+        provider: OpenAI
+        source_url: "https://developers.openai.com/api/docs/pricing"
+        usd_per_mtok: {input: 4.00, cache_read: 0.40, output: 20.00}
+        provider_specific: {cache_write: 5.00,
+                            long_context_over_272k: {input: 8.00, cache_read: 0.80, cache_write: 10.00, output: 30.00}}
+        note: >
+          Promotional pricing stated as available at least through 2026-11-21; trials remain under the 272K long-context threshold, so the short-context tier applies throughout.
+      - model_id: frontier_openweight
+        model_string: "moonshotai/Kimi-K2.6"
+        provider: DeepInfra
+        source_url: "https://deepinfra.com/moonshotai/Kimi-K2.6"
+        usd_per_mtok: {input: 0.75, cache_read: 0.15, output: 3.50}
+        provider_specific: {}
+        note: >
+          Open-weight Kimi K2.6 served by a US-hosted inference provider; Endpoint base URL recorded in the frontier_supplement entry.
+      - model_id: local_openweight
+        model_string: "gpt-oss:20b"
+        provider: local
+        source_url: ""
+        usd_per_mtok: {input: 0.00, cache_read: 0.00, output: 0.00}
+        provider_specific: {}
+        note: >
+          Local inference through Ollama; zero marginal API cost. Hardware descriptor recorded in the models entry; energy consumption is not measured and is a stated limitation.
   reconciliation: >
     Computed costs are token counts multiplied by the frozen rate card; provider billing totals are reconciled against computed totals per arm and both are released.
   local_arm: >
     Zero marginal API cost; wall-clock, token counts, and hardware descriptor recorded; energy consumption is not measured and is a stated limitation.
 
 protocol_version: "0.1.0"
-frozen_at: "FREEZE-PENDING"
+frozen_at: "2026-08-22T21:34:36Z"
 
 corpus_source:
   repository: "https://github.com/pengyin-shan/rda-audit-pipeline"
@@ -118,7 +166,7 @@ harnesses:
       Scripted runner loop that executes planned commands directly without an approval gate. The structural difference between the two loops is the harness-variation axis motivated by the harness-model dependence finding of arXiv:2607.15143.
 
 models:
-  - {id: local_openweight, arm: local, runtime: ollama, hardware: "FREEZE-PENDING", model_string: "gpt-oss:20b", note: "open-weight coding model runnable on the study's consumer hardware (Apple silicon, 24 GB unified memory); exact model string and architecture recorded at freeze after on-device candidate selection"}
+  - {id: local_openweight, arm: local, runtime: ollama, hardware: "Apple MacBook Air, Apple M2, 24 GB unified memory", model_string: "gpt-oss:20b", note: "open-weight coding model runnable on the study's consumer hardware (Apple silicon, 24 GB unified memory); exact model string and architecture recorded at freeze after on-device candidate selection"}
   - {id: hosted_sonnet,     arm: hosted, runtime: anthropic_api, model_string: "claude-sonnet-5"}
   - {id: hosted_flashlite, arm: hosted, runtime: google_api,    model_string: "gemini-3.5-flash-lite", note: "current-generation Flash-Lite on the standard paid tier; the cost-accessibility arm."}
 

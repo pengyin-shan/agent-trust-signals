@@ -1,6 +1,6 @@
 # Pre-Registered Protocol: Trust-Signal Response Study
 
-Protocol version 0.1.0. Frozen at: FREEZE-PENDING (set in `protocol_config.yaml`; this line is informational, the configuration is authoritative).
+Protocol version 0.1.0. Frozen at: (see protocol_config.yaml (authoritative)).
 
 This is a measurement study of how automated coding assistants respond to project quality and provenance metadata. Machine-readable parameters live in `protocol_config.yaml`, which every module reads; this document is the human-readable registration of the same design. Where a number appears in both, the configuration is authoritative and `scripts/verify_freeze.py` checks the two cannot disagree.
 
@@ -54,7 +54,7 @@ Three model arms, selected on three declared axes: (1) an open-weight mixture-of
 
 Trials per cell: hosted 3, local 10; the shared control carries a multiplier of 2 (hosted 6, local 20). Derived volume, checked mechanically against the configuration: 108 cells per model; 360 hosted trials per hosted model, 720 hosted total; 1,200 local trials. Hosted spend is capped at 100 US dollars. The volume is sized for a solo researcher.
 
-Frontier supplement: Outside the confirmatory matrix, a labeled descriptive supplement brackets the capability ceiling across closed and open frontier models: the most capable generally available model from each of two US major vendors (claude-fable-5 and gpt-5.6, the published alias of gpt-5.6-sol) and a leading open-weight frontier model (Kimi K2.5 class, accessed through a US-hosted inference provider; provider and exact string recorded at freeze) run the two bookend conditions (control and all_signals_present) on both harnesses across all six projects at 3 trials per cell, 72 trials per model.
+Frontier supplement: Outside the confirmatory matrix, a labeled descriptive supplement brackets the capability ceiling across closed and open frontier models: the most capable generally available model from each of two US major vendors (claude-fable-5 and gpt-5.6-sol, served under the published alias gpt-5.6) and a leading open-weight frontier model (Kimi K2.5 class, accessed through a US-hosted inference provider; provider and exact string recorded at freeze) run the two bookend conditions (control and all_signals_present) on both harnesses across all six projects at 3 trials per cell, 72 trials per model.
 
 ## 6. Environment
 

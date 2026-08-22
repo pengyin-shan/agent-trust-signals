@@ -1,0 +1,7 @@
+project_id,github_repo,domain,doi,pypi_package,npm_package,stratum,source,accepted_at
+faasm,faasm/faasm,hpc,,,,sc26,sc26_corpus,2026-08-22T20:48:38.608143+00:00
+mpi4py,mpi4py/mpi4py,hpc,,mpi4py,,sc26,sc26_corpus,2026-08-22T20:48:38.608143+00:00
+envpool,sail-sg/envpool,hpc,,envpool,,sc26,sc26_corpus,2026-08-22T20:48:38.608143+00:00
+qutip,qutip/qutip,qc,,qutip,,sc26,sc26_corpus,2026-08-22T20:48:38.608143+00:00
+covalent,agnostiqhq/covalent,qc,10.5281/zenodo.8369670,covalent,,sc26,sc26_corpus,2026-08-22T20:48:38.608143+00:00
+qrisp,eclipse-qrisp/qrisp,qc,,qrisp,,sc26,sc26_corpus,2026-08-22T20:48:38.608143+00:00
