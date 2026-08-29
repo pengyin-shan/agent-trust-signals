@@ -18,3 +18,7 @@ out/pending_s5.csv
 
 # derived deposit archive (redundant with the commit it describes)
 out/deposit_bundle.tar.gz
+s5check-taskflow/
+private/
+keys/
+.env
