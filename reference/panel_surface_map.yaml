@@ -1,0 +1,253 @@
+schema_version: 1
+observed_on: "2026-08-29"
+
+projects:
+
+  faasm:
+    upstream_repo: faasm/faasm
+    default_branch: main
+    package_name: faasm
+    title: {value: "Faasm", source: "README.md:5 (heading)"}
+    version: {value: "0.33.0", source: "VERSION:1", surface: "VERSION"}
+    previous_release: {value: "v0.32.0", source: "git tags, highest tag below 0.33.0 (git ls-remote --tags, 2026-08-29)"}
+    license: {value: "Apache-2.0", source: "LICENSE.md:1-3 (Apache License, Version 2.0)"}
+    citation_file: null
+    dependency_sources:
+      - {path: "requirements.txt", scope: optional}   # Python tooling for a C++ project (black, flake8, sphinx, invoke); not runtime dependencies
+    build_authors: null      # pyproject.toml carries only [tool.black]; setup.cfg only [flake8]; no author surface
+    entity_name: null
+    individuals: null
+    cited_work:
+      kind: conference-paper
+      title: "Faasm: Lightweight Isolation for Efficient Stateful Serverless Computing"
+      authors:
+        - {given: "Simon", family: "Shillaker"}
+        - {given: "Peter", family: "Pietzuch"}
+      year: 2020
+      venue: "USENIX Annual Technical Conference (USENIX ATC 20)"
+      doi: null
+      url: "https://www.usenix.org/conference/atc20/presentation/shillaker"
+      source: "README.md:23-24 links the paper; title and author list read from the linked USENIX page (verify: researcher confirms before first use)"
+    readme_has_citation_section: false
+    channels:
+      - {kind: source_repository, value: "https://github.com/faasm/faasm", source: "README.md:5 (badge targets)"}
+      - {kind: documentation, value: "https://faasm.readthedocs.io/en/latest/", source: "README.md:34"}
+    notes:
+      - "No package metadata in the build declaration: pyproject.toml has no [project] or [build-system] table and setup.cfg has no [metadata]; a checkout install proceeds as an unnamed setuptools package. Panel disclosure for the preprint, Section 6."
+      - "P4 not applicable (no author surface in the build declaration)."
+
+  mpi4py:
+    upstream_repo: mpi4py/mpi4py
+    default_branch: master
+    package_name: mpi4py
+    title: {value: "MPI for Python", source: "CITATION.cff:4; README.rst:2"}
+    version: {value: "4.2.0.dev0", source: "src/mpi4py/__init__.py:20 (pyproject.toml declares version dynamic)", surface: "src/mpi4py/__init__.py"}
+    previous_release: {value: "4.1.2", source: "git tags, highest tag below 4.2.0.dev0 (git ls-remote --tags, 2026-08-29)"}
+    license: {value: "BSD-3-Clause", source: "pyproject.toml:6; CITATION.cff:6"}
+    citation_file: CITATION.cff
+    dependency_sources: ["pyproject.toml"]
+    build_authors: {kind: individuals, value: ["Lisandro Dalcin"], source: "pyproject.toml:7-9"}
+    entity_name: {value: "MPI for Python", source: "CITATION.cff:11 (contact name)"}
+    individuals: null
+    cited_work:
+      kind: article
+      title: "mpi4py: Status Update After 12 Years of Development"
+      authors:
+        - {given: "Lisandro", family: "Dalcin"}
+        - {given: "Yao-Lung L.", family: "Fang"}
+      year: 2021
+      venue: "Computing in Science & Engineering"
+      doi: "10.1109/mcse.2021.3083216"
+      url: null
+      source: "CITATION.cff:28-37 (preferred-citation); README.rst:94-97"
+    readme_has_citation_section: true
+    channels:
+      - {kind: source_repository, value: "https://github.com/mpi4py/mpi4py", source: "pyproject.toml:50; CITATION.cff:9"}
+      - {kind: homepage, value: "https://mpi4py.github.io/", source: "README.rst:65; pyproject.toml:48"}
+      - {kind: documentation, value: "https://mpi4py.readthedocs.io/", source: "README.rst:64; pyproject.toml:49"}
+      - {kind: mailing_list, value: "mpi4py@googlegroups.com", source: "README.rst:70; CITATION.cff:12"}
+      - {kind: discussion, value: "https://groups.google.com/g/mpi4py", source: "README.rst:71; CITATION.cff:13"}
+      - {kind: package_index, value: "https://pypi.org/project/mpi4py/", source: "README.rst:24"}
+      - {kind: package_index, value: "https://anaconda.org/conda-forge/mpi4py", source: "README.rst:26"}
+    notes:
+      - "The checkout's own CITATION.cff already carries a preferred-citation to the 2021 article (P1 occurs naturally) and no version field."
+      - "pyproject.toml declares no runtime dependencies (mpi4py has none), so the SBOM lists the project component alone; this is the declared state, not an omission."
+
+  envpool:
+    upstream_repo: sail-sg/envpool
+    default_branch: main
+    package_name: envpool
+    title: {value: "EnvPool", source: "README.md:5 (lead sentence); setup.cfg:2"}
+    version: {value: "1.2.6", source: "setup.cfg:3", surface: "setup.cfg"}
+    previous_release: {value: "v1.2.5", source: "git tags, highest tag below 1.2.6 (git ls-remote --tags, 2026-08-29)"}
+    license: {value: "Apache-2.0", source: "setup.cfg classifier 'License :: OSI Approved :: Apache Software License'; LICENSE"}
+    citation_file: null
+    dependency_sources: ["setup.cfg"]
+    build_authors: {kind: entity, value: "EnvPool Contributors", source: "setup.cfg:4"}
+    entity_name: null
+    individuals:
+      source: "README.md:308 (BibTeX author field of the cited paper)"
+      persons:
+        - {given: "Jiayi", family: "Weng"}
+        - {given: "Min", family: "Lin"}
+        - {given: "Shengyi", family: "Huang"}
+        - {given: "Bo", family: "Liu"}
+        - {given: "Denys", family: "Makoviichuk"}
+        - {given: "Viktor", family: "Makoviychuk"}
+        - {given: "Zichen", family: "Liu"}
+        - {given: "Yufan", family: "Song"}
+        - {given: "Ting", family: "Luo"}
+        - {given: "Yukun", family: "Jiang"}
+        - {given: "Zhongwen", family: "Xu"}
+        - {given: "Shuicheng", family: "Yan"}
+    cited_work:
+      kind: conference-paper
+      title: "EnvPool: A Highly Parallel Reinforcement Learning Environment Execution Engine"
+      authors:
+        - {given: "Jiayi", family: "Weng"}
+        - {given: "Min", family: "Lin"}
+        - {given: "Shengyi", family: "Huang"}
+        - {given: "Bo", family: "Liu"}
+        - {given: "Denys", family: "Makoviichuk"}
+        - {given: "Viktor", family: "Makoviychuk"}
+        - {given: "Zichen", family: "Liu"}
+        - {given: "Yufan", family: "Song"}
+        - {given: "Ting", family: "Luo"}
+        - {given: "Yukun", family: "Jiang"}
+        - {given: "Zhongwen", family: "Xu"}
+        - {given: "Shuicheng", family: "Yan"}
+      year: 2022
+      venue: "Advances in Neural Information Processing Systems 35"
+      doi: null
+      url: "https://proceedings.neurips.cc/paper_files/paper/2022/file/8caaf08e49ddbad6694fae067442ee21-Paper-Datasets_and_Benchmarks.pdf"
+      source: "README.md:306-318 (BibTeX block)"
+    readme_has_citation_section: true
+    channels:
+      - {kind: source_repository, value: "https://github.com/sail-sg/envpool", source: "setup.cfg:8 (url)"}
+      - {kind: documentation, value: "https://envpool.readthedocs.io", source: "README.md:2"}
+      - {kind: issue_tracker, value: "https://github.com/sail-sg/envpool/issues", source: "setup.cfg:10 (project_urls Bug Tracker)"}
+    notes: []
+
+  qutip:
+    upstream_repo: qutip/qutip
+    default_branch: master
+    package_name: qutip
+    title: {value: "QuTiP: Quantum Toolbox in Python", source: "README.md:1"}
+    version: {value: "5.4.0.dev", source: "VERSION:1 (pyproject.toml declares version dynamic)", surface: "VERSION"}
+    previous_release: {value: "v5.3.1", source: "git tags, highest tag below 5.4.0.dev (git ls-remote --tags, 2026-08-29)"}
+    license: {value: "BSD-3-Clause", source: "pyproject.toml:16"}
+    citation_file: null      # CITATION.bib exists (BibTeX), no CITATION.cff
+    dependency_sources: ["pyproject.toml"]
+    build_authors:
+      kind: individuals
+      source: "pyproject.toml:18-31"
+      value: ["Alexander Pitchford", "Paul D. Nation", "Robert J. Johansson", "Chris Granade", "Arne Grimsmo",
+              "Nathan Shammah", "Shahnawaz Ahmed", "Neill Lambert", "Eric Giguère", "Boxi Li", "Jake Lishman", "Simon Cross"]
+    entity_name: {value: "QuTiP developers and contributors", source: "LICENSE.txt:1 (copyright holder)"}
+    individuals: null
+    cited_work:
+      kind: article
+      title: "QuTiP 5: The Quantum Toolbox in Python"
+      authors:
+        - {given: "Neill", family: "Lambert"}
+        - {given: "Eric", family: "Giguère"}
+        - {given: "Paul", family: "Menczel"}
+        - {given: "Boxi", family: "Li"}
+        - {given: "Patrick", family: "Hopf"}
+        - {given: "Gerardo", family: "Suárez"}
+        - {given: "Marc", family: "Gali"}
+        - {given: "Jake", family: "Lishman"}
+        - {given: "Rushiraj", family: "Gadhvi"}
+        - {given: "Rochisha", family: "Agarwal"}
+        - {given: "Asier", family: "Galicia"}
+        - {given: "Nathan", family: "Shammah"}
+        - {given: "Paul D.", family: "Nation"}
+        - {given: "J. R.", family: "Johansson"}
+        - {given: "Shahnawaz", family: "Ahmed"}
+        - {given: "Simon", family: "Cross"}
+        - {given: "Alexander", family: "Pitchford"}
+        - {given: "Franco", family: "Nori"}
+      year: 2026
+      venue: "Physics Reports"
+      doi: "10.1016/j.physrep.2025.10.001"
+      url: null
+      source: "CITATION.bib:1-30"
+    readme_has_citation_section: true   # README.md:93 'Citing QuTiP'
+    channels:
+      - {kind: source_repository, value: "https://github.com/qutip/qutip", source: "pyproject.toml:53 (Issues URL host)"}
+      - {kind: homepage, value: "https://qutip.org", source: "pyproject.toml:52"}
+      - {kind: documentation, value: "https://qutip.readthedocs.io/en/stable/", source: "pyproject.toml:54; README.md:73"}
+      - {kind: issue_tracker, value: "https://github.com/qutip/qutip/issues", source: "pyproject.toml:53"}
+      - {kind: discussion, value: "https://groups.google.com/g/qutip", source: "README.md:87"}
+      - {kind: package_index, value: "pip: qutip; conda-forge: qutip", source: "README.md:53"}
+    notes: []
+
+  covalent:
+    upstream_repo: AgnostiqHQ/covalent
+    default_branch: develop
+    package_name: covalent
+    title: {value: "Covalent", source: "README.md:196-200 (section text); setup.py name"}
+    version: {value: "0.240.0-rc.0", source: "VERSION:1 (setup.py:29 reads it)", surface: "VERSION"}
+    previous_release: {value: "v0.239.0-rc.0", source: "git tags, highest tag below 0.240.0-rc.0 (git ls-remote --tags, 2026-08-29)"}
+    license: {value: "Apache-2.0", source: "setup.py:204 ('Apache License 2.0'); LICENSE"}
+    citation_file: null
+    dependency_sources: ["requirements.txt"]
+    build_authors: {kind: entity, value: "Agnostiq", source: "setup.py:205"}
+    entity_name: {value: "Agnostiq Inc.", source: "pyproject.toml:1 (copyright line)"}
+    individuals: null
+    cited_work: null        # README.md:196 cites only a Zenodo record, no article
+    readme_has_citation_section: true
+    channels:
+      - {kind: source_repository, value: "https://github.com/AgnostiqHQ/covalent", source: "README.md:192 (contribution links)"}
+      - {kind: documentation, value: "https://docs.covalent.xyz/docs/", source: "README.md:19"}
+      - {kind: chat, value: "https://covalentworkflows.slack.com/ (invite link in README)", source: "README.md:23"}
+      - {kind: support_email, value: "support@agnostiq.ai", source: "setup.py:206"}
+    notes:
+      - "P1 not applicable: the checkout cites no article; disclosed per-project difference (ruling R7)."
+      - "P4 applied as entity-versus-entity spelling divergence: 'Agnostiq' (setup.py:205) versus 'Agnostiq Inc.' (pyproject.toml:1)."
+
+  qrisp:
+    upstream_repo: eclipse-qrisp/qrisp
+    default_branch: main
+    package_name: qrisp
+    title: {value: "Qrisp", source: "pyproject.toml:9 (name); README.md heading"}
+    version: {value: "0.9.7", source: "pyproject.toml:10", surface: "pyproject.toml"}
+    previous_release: {value: "0.9", source: "git tags, highest tag below 0.9.7 (git ls-remote --tags, 2026-08-29)"}
+    license: {value: "EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0", source: "pyproject.toml:29"}
+    citation_file: null
+    dependency_sources: ["pyproject.toml"]
+    build_authors: {kind: entity, value: "The Qrisp authors", source: "pyproject.toml:11-13"}
+    entity_name: null
+    individuals:
+      source: "README.md:99 (BibTeX author field of the cited paper)"
+      persons:
+        - {given: "Raphael", family: "Seidel"}
+        - {given: "Sebastian", family: "Bock"}
+        - {given: "René", family: "Zander"}
+        - {given: "Matic", family: "Petrič"}
+        - {given: "Niklas", family: "Steinmann"}
+        - {given: "Nikolay", family: "Tcholtchev"}
+        - {given: "Manfred", family: "Hauswirth"}
+    cited_work:
+      kind: misc
+      title: "Qrisp: A Framework for Compilable High-Level Programming of Gate-Based Quantum Computers"
+      authors:
+        - {given: "Raphael", family: "Seidel"}
+        - {given: "Sebastian", family: "Bock"}
+        - {given: "René", family: "Zander"}
+        - {given: "Matic", family: "Petrič"}
+        - {given: "Niklas", family: "Steinmann"}
+        - {given: "Nikolay", family: "Tcholtchev"}
+        - {given: "Manfred", family: "Hauswirth"}
+      year: 2024
+      venue: "arXiv:2406.14792"
+      doi: null
+      url: "https://arxiv.org/abs/2406.14792"
+      source: "README.md:97-105 (BibTeX block)"
+    readme_has_citation_section: true
+    channels:
+      - {kind: source_repository, value: "https://github.com/eclipse-qrisp/Qrisp", source: "pyproject.toml:96 (Homepage)"}
+      - {kind: documentation, value: "https://www.qrisp.eu/", source: "README.md:52"}
+      - {kind: issue_tracker, value: "https://github.com/eclipse-qrisp/Qrisp/issues", source: "pyproject.toml:97"}
+      - {kind: chat, value: "https://discord.gg/v5np7DeBaq", source: "README.md:84"}
+    notes: []

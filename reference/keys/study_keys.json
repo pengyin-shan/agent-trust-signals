@@ -1,0 +1,31 @@
+{
+  "generated_with": "scripts/make_study_keys.py",
+  "identities": {
+    "A": {
+      "name": "agent-trust-signals release key",
+      "email": "release-key@agent-trust-signals.invalid",
+      "pgp_fingerprint": "1C7FA45AD436C250D6E8B4700C88D442D98023E4",
+      "pgp_algorithm": "ed25519",
+      "ecdsa_curve": "P-256",
+      "ecdsa_keyid_sha256": "fc08819164b28345e2f5fb8937dddefdad50d232ac91026e6574c5ceccc99ec1",
+      "public_files": [
+        "release-key-A.asc",
+        "attestation-key-A.pub"
+      ],
+      "role": "declared release identity"
+    },
+    "B": {
+      "name": "agent-trust-signals unrelated key",
+      "email": "unrelated-key@agent-trust-signals.invalid",
+      "pgp_fingerprint": "031FFDFB2540E16088415B230FE9FFFA603F2368",
+      "pgp_algorithm": "ed25519",
+      "ecdsa_curve": "P-256",
+      "ecdsa_keyid_sha256": "b90feaa7ce446d64b78292991d6ae6ba12c1df01414237c0ca3e47f857a8fc3d",
+      "public_files": [
+        "release-key-B.asc",
+        "attestation-key-B.pub"
+      ],
+      "role": "issuer-mismatch identity (never named in KEYS)"
+    }
+  }
+}
