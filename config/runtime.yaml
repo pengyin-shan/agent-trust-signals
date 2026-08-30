@@ -1,15 +1,3 @@
-# Runtime settings for the Stage 1-2 runner. NOT part of the frozen protocol:
-# endpoints, key locations, and transport tuning live here; model identity
-# lives ONLY in protocol/protocol_config.yaml (frozen). Do not add model
-# strings to this file.
-#
-# Note (2026-08-24): the frozen config's frontier_openweight note states the
-# DeepInfra endpoint was "recorded at freeze", but no endpoint URL appears in
-# any frozen file. The endpoint is therefore configured here and verified
-# against the live service during the adapter smoke test. Whether this
-# warrants a dated documentation-correction entry in PROTOCOL.md section 11
-# is Pengyin's call, flagged in STAGE1-NOTES.md.
-
 timeout_s: 300
 max_retries: 2
 
@@ -32,4 +20,4 @@ providers:
       keep_alive: "60m"   # model stays loaded across a batch (work-order item 4)
 
 ledger:
-  path: "out/cost_ledger.csv"
+  path: "run/cost_ledger.csv" # the runner refuses to start while the ledger points under the frozen out/

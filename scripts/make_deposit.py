@@ -9,7 +9,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from trust_signals import __version__, config, paths  # noqa: E402
+from trust_signals import __version__, config, paths
 
 BUNDLE_FILES = [
     paths.PROTOCOL_DOC,

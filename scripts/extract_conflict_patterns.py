@@ -1,34 +1,11 @@
 #!/usr/bin/env python3
-"""Derive the inconsistent_surface pattern catalog from the released
-supply-side verification log (rda-audit-pipeline v0.2.3,
-verification/verification_log.csv).
-
-The frozen condition definition requires the inconsistent-surface fork
-constructor to reproduce documented real conflict patterns from that log,
-never invented ones. This script aggregates the hand-verified conflict rows
-into named pattern families and writes reference/inconsistent_surface_patterns.csv
-with, for each family: the fields and surface pairs it was observed on, the
-number of supporting log rows, example projects, a representative verbatim
-note, and the proposed projection onto surfaces present in a repository
-checkout (the only surfaces a sandboxed install trial can see).
-
-Provenance rule: every family must cite at least one hand_verdict=conflict
-row; a family with zero supporting rows is a bug, not a catalog entry.
-
-Usage:
-    python scripts/extract_conflict_patterns.py /path/to/rda-audit-pipeline
-"""
 from __future__ import annotations
-
 import csv
 import sys
 from collections import defaultdict
 from pathlib import Path
 
 OUT = Path(__file__).resolve().parents[1] / "reference" / "inconsistent_surface_patterns.csv"
-
-# Family definitions: predicate over a conflict row -> family id.
-# Order matters: first match wins. Predicates use only log columns.
 
 def classify(row: dict) -> str | None:
     field = row["field"]
@@ -50,8 +27,7 @@ def classify(row: dict) -> str | None:
         return "P6_name_encoding_artifact"
     if field == "license":
         return "P7_license_divergence"
-    return None  # conflict rows outside the named families stay uncatalogued
-
+    return None
 
 DESCRIPTIONS = {
     "P1_preferred_citation_journal_redirect": (
@@ -118,7 +94,6 @@ PROJECTIONS = {
     ),
 }
 
-
 def main() -> int:
     if len(sys.argv) != 2:
         print(__doc__)
@@ -158,7 +133,6 @@ def main() -> int:
     total = sum(len(v) for v in fams.values())
     print(f"cataloged {len(fams)} pattern families from {total} of {len(conflicts)} conflict rows -> {OUT}")
     return 0
-
 
 if __name__ == "__main__":
     raise SystemExit(main())

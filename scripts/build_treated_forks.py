@@ -9,11 +9,11 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from trust_signals.conditions import condition_ids  # noqa: E402
-from trust_signals.paths import PANEL_DRAW_CSV  # noqa: E402
-from trust_signals.treatments import TreatmentContext, TreatmentError, check_registry, treatment_for  # noqa: E402
-from trust_signals.treatments.keys import load_study_keys  # noqa: E402
-from trust_signals.treatments.surface_map import load_surface_map  # noqa: E402
+from trust_signals.conditions import condition_ids
+from trust_signals.paths import PANEL_DRAW_CSV
+from trust_signals.treatments import TreatmentContext, TreatmentError, check_registry, treatment_for
+from trust_signals.treatments.keys import load_study_keys
+from trust_signals.treatments.surface_map import load_surface_map
 
 NEEDS_KEYS = {"signed_release_present", "signed_release_issuer_mismatch", "attestation_present",
               "attestation_issuer_mismatch", "all_signals_present"}

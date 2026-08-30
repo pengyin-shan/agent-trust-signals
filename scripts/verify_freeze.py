@@ -10,7 +10,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from trust_signals import conditions, config, paths  # noqa: E402
+from trust_signals import conditions, config, paths
 
 FAILURES: list[str] = []
 

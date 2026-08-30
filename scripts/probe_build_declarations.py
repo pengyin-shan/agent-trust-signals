@@ -9,7 +9,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from trust_signals import config, paths  # noqa: E402
+from trust_signals import config, paths
 
 BRANCHES = ("main", "master", "develop", "dev")
 MARKER_FILES = ("README.md", "README.rst", "CMakeLists.txt", "pyproject.toml",

@@ -1,37 +1,18 @@
 #!/usr/bin/env python3
-"""Pre-execution checklist item: smoke test each provider adapter.
-
-For every model entry in the frozen config (registered arms plus frontier
-supplement), send one trivial call and check that:
-  1. the adapter returns text and a usage split,
-  2. the model string reported by the API matches the frozen string,
-  3. the ledger computes a cost for the trial from the frozen rate card.
-
-Nothing is written to the real ledger; costs are printed only. Run after
-.env is populated. Cost of a full run is a few cents.
-
-Usage:
-    python scripts/smoke_adapters.py                # all six arms
-    python scripts/smoke_adapters.py --only ollama  # by runtime
-    python scripts/smoke_adapters.py --only hosted_sonnet  # by model_id
-"""
 from __future__ import annotations
-
 import argparse
 import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-import yaml  # noqa: E402
-
-from trust_signals.config import load_config  # noqa: E402
-from trust_signals.paths import CONFIG_PATH, ROOT  # noqa: E402
-from trust_signals.providers import ProviderTransportError, build_adapter  # noqa: E402
-from trust_signals.runner import CostLedger  # noqa: E402
+import yaml
+from trust_signals.config import load_config
+from trust_signals.paths import CONFIG_PATH, ROOT
+from trust_signals.providers import ProviderTransportError, build_adapter
+from trust_signals.runner import CostLedger
 
 PROMPT = "Reply with the single word: ready"
-
 
 def main() -> int:
     parser = argparse.ArgumentParser()
@@ -87,7 +68,6 @@ def main() -> int:
 
     print(f"\n{'ALL PASS' if failures == 0 else f'{failures} FAILURE(S)'}")
     return 0 if failures == 0 else 1
-
 
 if __name__ == "__main__":
     raise SystemExit(main())

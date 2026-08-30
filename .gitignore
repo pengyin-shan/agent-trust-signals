@@ -21,6 +21,7 @@ out/deposit_bundle.tar.gz
 s5check-taskflow/
 private/
 /keys/
-.env
+forks/
+runs/
 
 
