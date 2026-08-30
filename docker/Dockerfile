@@ -5,6 +5,7 @@ ARG COSIGN_ARCH=arm64
 ARG COSIGN_SHA256=3b2e2e3854d0356c45fe6607047526ccd04742d20bd44afb5be91fa2a6e7cb4a
 
 ENV PIP_NO_INDEX=1 \
+    PIP_FIND_LINKS=/wheels \
     PIP_DISABLE_PIP_VERSION_CHECK=1 \
     PIP_NO_CACHE_DIR=1 \
     PYTHONDONTWRITEBYTECODE=1 \
@@ -20,9 +21,11 @@ RUN curl -fsSL -o /usr/local/bin/cosign \
     && echo "${COSIGN_SHA256}  /usr/local/bin/cosign" | sha256sum -c - \
     && chmod +x /usr/local/bin/cosign
 
-RUN PIP_NO_INDEX=0 pip install --no-cache-dir \
+RUN mkdir -p /wheels && PIP_NO_INDEX=0 pip download --dest /wheels \
         "setuptools>=70" wheel "cython>=3" "meson-python>=0.16" "scikit-build-core>=0.9" \
-        hatchling flit-core pdm-backend poetry-core "numpy>=1.26,<3" packaging
+        hatchling flit-core pdm-backend poetry-core "numpy>=1.26,<3" packaging \
+    && PIP_NO_INDEX=0 pip install --no-cache-dir --no-index --find-links /wheels \
+        setuptools wheel cython meson-python scikit-build-core hatchling flit-core pdm-backend poetry-core numpy packaging
 
 RUN mkdir -p /work /log
 WORKDIR /work

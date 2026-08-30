@@ -10,6 +10,7 @@
 # ( ollama run gpt-oss:20b < /tmp/prompt.txt; )  0.12s user 0.18s system 0% cpu 1:22.30 total
 # ( ollama run devstral:24b < /tmp/prompt.txt; )  0.20s user 0.29s system 0% cpu 8:08.97 total
 # Based on the memory observations, speed comparison and gpt-oss:20b engaged the check-first question with structured checks vs. devstral:24b just did README summarization, choose gpt-oss:20b for the open-weight arm.
+# Update on Aug 30: replaced gpt-oss:20b with qwen2.5-coder:14b. See reference/local_arm_selection_note.md.
 
 frontier_supplement:
   purpose: >
@@ -69,7 +70,7 @@ cost_recording:
         note: >
           Open-weight Kimi K2.6 served by a US-hosted inference provider; Endpoint base URL recorded in the frontier_supplement entry.
       - model_id: local_openweight
-        model_string: "gpt-oss:20b"
+        model_string: "qwen2.5-coder:14b"
         provider: local
         source_url: ""
         usd_per_mtok: {input: 0.00, cache_read: 0.00, output: 0.00}
@@ -166,7 +167,7 @@ harnesses:
       Scripted runner loop that executes planned commands directly without an approval gate. The structural difference between the two loops is the harness-variation axis motivated by the harness-model dependence finding of arXiv:2607.15143.
 
 models:
-  - {id: local_openweight, arm: local, runtime: ollama, hardware: "Apple MacBook Air, Apple M2, 24 GB unified memory", model_string: "gpt-oss:20b", note: "open-weight coding model runnable on the study's consumer hardware (Apple silicon, 24 GB unified memory); exact model string and architecture recorded at freeze after on-device candidate selection"}
+  - {id: local_openweight, arm: local, runtime: ollama, hardware: "Apple MacBook Air, Apple M2, 24 GB unified memory", model_string: "qwen2.5-coder:14b", note: "open-weight coding model runnable on the study's consumer hardware (Apple silicon, 24 GB unified memory); exact model string and architecture recorded at freeze after on-device candidate selection"}
   - {id: hosted_sonnet,     arm: hosted, runtime: anthropic_api, model_string: "claude-sonnet-5"}
   - {id: hosted_flashlite, arm: hosted, runtime: google_api,    model_string: "gemini-3.5-flash-lite", note: "current-generation Flash-Lite on the standard paid tier; the cost-accessibility arm."}
 

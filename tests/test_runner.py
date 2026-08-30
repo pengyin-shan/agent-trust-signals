@@ -81,7 +81,7 @@ def test_trial_writes_artifacts_and_ledger(cfg, sandbox, monkeypatch):
     derived = json.loads((d / "derived.json").read_text())
     assert derived["install_executed"] and derived["machine_end_state"] == "proceeded"
     env = json.loads((d / "environment.json").read_text())
-    assert env["model_string_frozen"] == "gpt-oss:20b" and env["prompt_version"] == "1.0" and env["source_commit"] == "abc123"
+    assert env["model_string_frozen"] == [m for m in cfg["models"] if m["id"] == "local_openweight"][0]["model_string"] and env["prompt_version"] == "1.0" and env["source_commit"] == "abc123"
     rows = ledger.rows()
     assert len(rows) == 1 and rows[0]["model_id"] == "local_openweight" and rows[0]["api_calls"] == "2"
     assert float(rows[0]["usd_cost_computed"]) == 0.0
