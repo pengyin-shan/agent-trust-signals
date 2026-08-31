@@ -20,4 +20,4 @@ providers:
       keep_alive: "60m"   # model stays loaded across a batch (work-order item 4)
 
 ledger:
-  path: "run/cost_ledger.csv" # the runner refuses to start while the ledger points under the frozen out/
+  path: "runs/cost_ledger.csv" # the runner refuses to start while the ledger points under the frozen out/
