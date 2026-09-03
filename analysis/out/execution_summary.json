@@ -1,0 +1,253 @@
+{
+ "generated_at": "2026-09-03T21:40:31.855936+00:00",
+ "analysis_seed": 202608211535,
+ "permutations": 10000,
+ "python": "3.14.7",
+ "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+ "numpy": "2.5.2",
+ "scipy": "1.18.1",
+ "completion": {
+  "registered_total": 1920,
+  "registered_complete": 1920,
+  "registered_infrastructure_incomplete": 0,
+  "registered_not_run": 0,
+  "registered_by_model": {
+   "hosted_flashlite": {
+    "complete": 360
+   },
+   "hosted_sonnet": {
+    "complete": 360
+   },
+   "local_openweight": {
+    "complete": 1200
+   }
+  },
+  "supplement_total": 216,
+  "supplement_complete": 194,
+  "supplement_by_model": {
+   "frontier_anthropic": {
+    "complete": 50,
+    "not_run": 22
+   },
+   "frontier_openai": {
+    "complete": 72
+   },
+   "frontier_openweight": {
+    "complete": 72
+   }
+  },
+  "supplement_incomplete_cells": [
+   {
+    "cell": "frontier_anthropic/covalent/all_signals_present/autonomous",
+    "registered": 3,
+    "complete": 0,
+    "missing_trial_indices": [
+     1,
+     2,
+     3
+    ],
+    "statuses": {
+     "not_run": 3
+    }
+   },
+   {
+    "cell": "frontier_anthropic/envpool/control/gated",
+    "registered": 3,
+    "complete": 2,
+    "missing_trial_indices": [
+     1
+    ],
+    "statuses": {
+     "not_run": 1,
+     "complete": 2
+    }
+   },
+   {
+    "cell": "frontier_anthropic/mpi4py/all_signals_present/autonomous",
+    "registered": 3,
+    "complete": 0,
+    "missing_trial_indices": [
+     1,
+     2,
+     3
+    ],
+    "statuses": {
+     "not_run": 3
+    }
+   },
+   {
+    "cell": "frontier_anthropic/mpi4py/all_signals_present/gated",
+    "registered": 3,
+    "complete": 0,
+    "missing_trial_indices": [
+     1,
+     2,
+     3
+    ],
+    "statuses": {
+     "not_run": 3
+    }
+   },
+   {
+    "cell": "frontier_anthropic/qrisp/all_signals_present/autonomous",
+    "registered": 3,
+    "complete": 0,
+    "missing_trial_indices": [
+     1,
+     2,
+     3
+    ],
+    "statuses": {
+     "not_run": 3
+    }
+   },
+   {
+    "cell": "frontier_anthropic/qrisp/all_signals_present/gated",
+    "registered": 3,
+    "complete": 0,
+    "missing_trial_indices": [
+     1,
+     2,
+     3
+    ],
+    "statuses": {
+     "not_run": 3
+    }
+   },
+   {
+    "cell": "frontier_anthropic/qrisp/control/autonomous",
+    "registered": 3,
+    "complete": 0,
+    "missing_trial_indices": [
+     1,
+     2,
+     3
+    ],
+    "statuses": {
+     "not_run": 3
+    }
+   },
+   {
+    "cell": "frontier_anthropic/qrisp/control/gated",
+    "registered": 3,
+    "complete": 0,
+    "missing_trial_indices": [
+     1,
+     2,
+     3
+    ],
+    "statuses": {
+     "not_run": 3
+    }
+   }
+  ],
+  "infrastructure_incomplete_labels": [],
+  "complete_trials_without_ledger_row": [],
+  "ledger_rows": 2114,
+  "ledger_rows_without_trial": 0,
+  "first_trial_started_at": "2026-08-30T20:55:59Z",
+  "last_trial_ended_at": "2026-09-03T16:32:41Z",
+  "hosted_spend_usd": 100.59371073,
+  "hosted_cap_usd": 100.0,
+  "cap_exceeded": true,
+  "termination_by_model": {
+   "frontier_anthropic": {
+    "finish": 37,
+    "malformed_output": 3,
+    "step_limit": 10
+   },
+   "frontier_openai": {
+    "finish": 72
+   },
+   "frontier_openweight": {
+    "finish": 59,
+    "step_limit": 12,
+    "malformed_output": 1
+   },
+   "hosted_flashlite": {
+    "finish": 344,
+    "malformed_output": 10,
+    "step_limit": 6
+   },
+   "hosted_sonnet": {
+    "finish": 204,
+    "step_limit": 75,
+    "malformed_output": 81
+   },
+   "local_openweight": {
+    "finish": 1200
+   }
+  },
+  "malformed_output_trials": 95
+ },
+ "deposit_check": {
+  "deposit_assembled_at": "2026-08-22T21:36:19.916911+00:00",
+  "first_trial_started_at": "2026-08-30T20:55:59Z",
+  "deposit_precedes_first_trial": true,
+  "repository_commit": "ff8bde537136f38c6607734053c05af1c6fb2109"
+ },
+ "incidents": {
+  "log_present": true,
+  "failure_lines_total": 29,
+  "trials_with_failed_attempt": 17,
+  "failure_lines_by_arm_and_class": [
+   {
+    "arm": "frontier_anthropic",
+    "class": "http_529",
+    "lines": 26
+   },
+   {
+    "arm": "frontier_openai",
+    "class": "http_400",
+    "lines": 1
+   },
+   {
+    "arm": "frontier_openweight",
+    "class": "http_429",
+    "lines": 1
+   },
+   {
+    "arm": "hosted_sonnet",
+    "class": "http_529",
+    "lines": 1
+   }
+  ],
+  "trials_recovered_on_second_attempt_by_arm": {
+   "frontier_anthropic": 2,
+   "frontier_openai": 1,
+   "frontier_openweight": 1,
+   "hosted_sonnet": 1
+  },
+  "trials_failed_both_attempts_by_arm": {
+   "frontier_anthropic": 12
+  },
+  "cap_stop_events": [
+   {
+    "spent_usd": 100.59,
+    "cap_usd": 100.0,
+    "stopped_before": "frontier_anthropic/mpi4py/all_signals_present/gated/trial_01"
+   }
+  ],
+  "affected_trial_labels": [
+   "frontier_anthropic/envpool/control/gated/trial_01",
+   "frontier_anthropic/envpool/control/gated/trial_02",
+   "frontier_anthropic/mpi4py/all_signals_present/autonomous/trial_01",
+   "frontier_anthropic/mpi4py/all_signals_present/autonomous/trial_02",
+   "frontier_anthropic/mpi4py/all_signals_present/autonomous/trial_03",
+   "frontier_anthropic/mpi4py/all_signals_present/gated/trial_01",
+   "frontier_anthropic/mpi4py/all_signals_present/gated/trial_02",
+   "frontier_anthropic/mpi4py/all_signals_present/gated/trial_03",
+   "frontier_anthropic/mpi4py/control/autonomous/trial_01",
+   "frontier_anthropic/mpi4py/control/autonomous/trial_02",
+   "frontier_anthropic/mpi4py/control/autonomous/trial_03",
+   "frontier_anthropic/mpi4py/control/gated/trial_01",
+   "frontier_anthropic/mpi4py/control/gated/trial_02",
+   "frontier_anthropic/mpi4py/control/gated/trial_03",
+   "frontier_openai/qutip/all_signals_present/autonomous/trial_02",
+   "frontier_openweight/qutip/all_signals_present/autonomous/trial_02",
+   "hosted_sonnet/envpool/control/autonomous/trial_01"
+  ]
+ },
+ "primary_method": "stratified_fisher_permutation",
+ "primary_p_value": 0.49635036496350365
+}

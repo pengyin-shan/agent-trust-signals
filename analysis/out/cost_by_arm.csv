@@ -1,0 +1,7 @@
+model_id,model_string,arm,supplement,trials,usd_total,usd_per_trial,api_calls,wall_clock_hours,wall_clock_seconds_per_trial,verification_positive,usd_per_verification_positive,wall_clock_hours_per_verification_positive,input_tokens_uncached,input_tokens_cache_write,input_tokens_cache_read,output_tokens
+frontier_anthropic,claude-fable-5,frontier,True,50,50.059167,1.00118334,762,3.4729652777777775,250.05349999999999,0,,,23022,757528,7656397,654069
+frontier_openai,gpt-5.6-sol,frontier,True,72,4.9159528,0.06827712222222222,652,1.1330977777777778,56.65488888888889,0,,,499692,0,2370912,98441
+frontier_openweight,moonshotai/Kimi-K2.6,frontier,True,72,3.4461224,0.04786281111111111,1294,9.054729722222222,452.7364861111111,1,3.4461224,9.054729722222222,1059168,0,6132416,494824
+hosted_flashlite,gemini-3.5-flash-lite,hosted,False,360,5.15565693,0.014321269250000001,4069,4.422568888888889,44.22568888888889,0,,,15685157,0,137661,178392
+hosted_sonnet,claude-sonnet-5,hosted,False,360,37.0168116,0.10282447666666666,7403,12.655110555555556,126.55110555555555,9,4.112979066666666,1.4061233950617285,543431,3740596,44702998,1763786
+local_openweight,qwen2.5-coder:14b,local,False,1200,0.0,0.0,2524,19.893520000000002,59.68056000000001,0,,,1684764,0,0,142758

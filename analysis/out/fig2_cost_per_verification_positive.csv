@@ -1,0 +1,7 @@
+model_id,arm,supplement,trials,usd_total,verification_positive,usd_per_verification_positive,wall_clock_hours,wall_clock_hours_per_verification_positive
+frontier_anthropic,frontier,True,50,50.059167,0,,3.4729652777777775,
+frontier_openai,frontier,True,72,4.9159528,0,,1.1330977777777778,
+frontier_openweight,frontier,True,72,3.4461224,1,3.4461224,9.054729722222222,9.054729722222222
+hosted_flashlite,hosted,False,360,5.15565693,0,,4.422568888888889,
+hosted_sonnet,hosted,False,360,37.0168116,9,4.112979066666666,12.655110555555556,1.4061233950617285
+local_openweight,local,False,1200,0.0,0,,19.893520000000002,

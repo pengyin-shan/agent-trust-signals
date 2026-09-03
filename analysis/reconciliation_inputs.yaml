@@ -1,0 +1,16 @@
+console_usd:
+  anthropic: 87.56
+  openai: 5.43
+  deepinfra: 3.51
+  google: 4.51
+arm_to_console:
+  hosted_sonnet: anthropic
+  frontier_anthropic: anthropic
+  frontier_openai: openai
+  frontier_openweight: deepinfra
+  hosted_flashlite: google
+excluded_spend_usd:
+  anthropic: 0.32
+  openai: 0.00
+  deepinfra: 0.00
+  google: 0.00

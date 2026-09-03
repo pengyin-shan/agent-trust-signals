@@ -1,0 +1,7 @@
+model_id,configured_model_string,trials,trials_with_no_reported_string,reported_strings,all_reported_exact,all_reported_exact_or_prefixed,mismatched_strings
+frontier_anthropic,claude-fable-5,50,0,"{""claude-fable-5"": 50}",True,True,{}
+frontier_openai,gpt-5.6-sol,72,0,"{""gpt-5.6-sol"": 72}",True,True,{}
+frontier_openweight,moonshotai/Kimi-K2.6,72,0,"{""moonshotai/Kimi-K2.6"": 72}",True,True,{}
+hosted_flashlite,gemini-3.5-flash-lite,360,0,"{""gemini-3.5-flash-lite"": 360}",True,True,{}
+hosted_sonnet,claude-sonnet-5,360,0,"{""claude-sonnet-5"": 360}",True,True,{}
+local_openweight,qwen2.5-coder:14b,1200,0,"{""qwen2.5-coder:14b"": 1200}",True,True,{}
