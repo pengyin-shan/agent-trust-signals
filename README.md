@@ -84,3 +84,7 @@ pytest
 - Output Tokens: $3.5 / MTok
 
 ## Notes
+
+- The protocol was deposited before execution (10.5281/zenodo.22062503). 
+- Results are produced only by `scripts/run_analysis.py`, and that trial artifacts are in the data deposit. 
+- Preprint: arXiv identifier to be added on announcement.
