@@ -8,7 +8,7 @@ authors:
     affiliation: "National Center for Supercomputing Applications, University of Illinois Urbana-Champaign"
     email: pengyins@illinois.edu
     orcid: "https://orcid.org/0009-0009-6309-380X"
-version: 0.2.0
+version: 0.2.1
 license: Apache-2.0
 date-released: 2026-09-07
 repository-code: "https://github.com/pengyin-shan/agent-trust-signals"

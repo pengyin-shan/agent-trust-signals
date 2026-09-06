@@ -1,0 +1,31 @@
+name: release
+on:
+  push:
+    tags: ["v*"]
+permissions:
+  contents: write
+  id-token: write
+  attestations: write
+jobs:
+  build-attest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install build cyclonedx-bom
+      - run: pip install .
+      - run: python -m build
+      - run: cyclonedx-py environment --output-format json --outfile dist/sbom.cdx.json
+      - uses: actions/attest-build-provenance@v2
+        with:
+          subject-path: |
+            dist/*.whl
+            dist/*.tar.gz
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            dist/*.whl
+            dist/*.tar.gz
+            dist/sbom.cdx.json
