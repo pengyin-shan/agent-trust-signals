@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "trust-signals"
-version = "0.1.0"
+version = "0.2.1"
 description = " measurement study of how automated coding assistants respond to project quality and provenance metadata"
 readme = "README.md"
 requires-python = ">=3.11"
