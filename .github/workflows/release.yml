@@ -17,7 +17,7 @@ jobs:
       - run: pip install build cyclonedx-bom
       - run: pip install .
       - run: python -m build
-      - run: cyclonedx-py environment --output-format json --outfile dist/sbom.cdx.json
+      - run: cyclonedx-py environment --of JSON -o dist/sbom.cdx.json
       - uses: actions/attest-build-provenance@v2
         with:
           subject-path: |
