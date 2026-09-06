@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/1341904365.svg)](https://doi.org/10.5281/zenodo.22544144)
+
 # agent-trust-signals
 
 A measurement study of how automated coding assistants respond to project quality and provenance metadata: do assistants retrieve and act on positive, defense-side trust signals (software bills of materials, signed releases, build provenance attestations, declared official communication channels) before installing or adopting research software?

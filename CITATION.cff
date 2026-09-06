@@ -11,4 +11,5 @@ authors:
 version: 0.2.1
 license: Apache-2.0
 date-released: 2026-09-07
+doi: 10.5281/zenodo.22544144
 repository-code: "https://github.com/pengyin-shan/agent-trust-signals"
