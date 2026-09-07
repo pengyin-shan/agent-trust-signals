@@ -1,8 +1,17 @@
 [![DOI](https://zenodo.org/badge/1341904365.svg)](https://doi.org/10.5281/zenodo.22544144)
+[![Release](https://img.shields.io/github/v/release/pengyin-shan/agent-trust-signals)](https://github.com/pengyin-shan/agent-trust-signals/releases/latest)
 
 # agent-trust-signals
 
 A measurement study of how automated coding assistants respond to project quality and provenance metadata: do assistants retrieve and act on positive, defense-side trust signals (software bills of materials, signed releases, build provenance attestations, declared official communication channels) before installing or adopting research software?
+
+## Release verification
+
+Release v0.2.1 ships a wheel and sdist with a CycloneDX SBOM (`sbom.cdx.json`) and a build-provenance attestation recorded by GitHub Actions. To verify a downloaded build artifact:
+
+    gh attestation verify trust_signals-0.2.1-py3-none-any.whl --owner pengyin-shan
+
+The attestation covers the files the release workflow built (`trust_signals-0.2.1-py3-none-any.whl`, `trust_signals-0.2.1.tar.gz`), not the "Source code" archives that GitHub generates for every tag. Official channels and the disclosure path are in SECURITY.md.
 
 ## Quickstart
 
@@ -90,3 +99,4 @@ pytest
 - The protocol was deposited before execution (10.5281/zenodo.22062503). 
 - Results are produced only by `scripts/run_analysis.py`, and that trial artifacts are in the data deposit. 
 - Preprint: arXiv identifier to be added on announcement.
+- Every trial started after the protocol deposit (2026-08-22); first trial 2026-08-30T20:55:59Z, last 2026-09-03T16:32:41Z.
